@@ -1,181 +1,421 @@
 
-<!-- ============== HERO / BANNER ============== -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 300"
+     width="1000" height="300"
+     role="img"
+     aria-labelledby="t d">
 
-<p align="center">
-  <img src="./assets/banner.png" width="100%" alt="Luis Diego Sipion Galvez - Software Developer & Cybersecurity"/>
-</p>
+  <title id="t">Luis Diego Sipion Galvez</title>
+  <desc id="d">Estudiante de Ingeniería de Software con IA y Ciberseguridad</desc>
 
-<h1 align="center">
-  ¡Hola! Soy Luis Diego Sipion Galvez 👋
-</h1>
+  <defs>
+    <!-- DEGRADADOS -->
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset=".5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
 
-<h3 align="center">
-  💻 Ingeniería de Software | 🤖 Inteligencia Artificial | 🛡️ Ciberseguridad
-</h3>
+    <radialGradient id="g1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=700&lines=Desarrollando+soluciones+tecnol%C3%B3gicas;Explorando+el+poder+de+la+IA;Construyendo+software+seguro;Aprendiendo%2C+innovando+y+creciendo."/>
-</p>
+    <radialGradient id="g2">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/💻_Software_Development-0A192F?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🤖_Artificial_Intelligence-003B70?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🛡️_Cybersecurity-00C2FF?style=for-the-badge&logoColor=white"/>
-</p>
+    <!-- COLORES DEL CUBO -->
+    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#42A5F5"/>
+      <stop offset="100%" stop-color="#1685D5"/>
+    </linearGradient>
 
-<p align="center">
-  <a href="https://github.com/TU_USUARIO">
-    <img src="https://img.shields.io/badge/GitHub-Perfil-181717?style=for-the-badge&logo=github"/>
-  </a>
-  <a href="https://www.linkedin.com/in/TU_PERFIL/">
-    <img src="https://img.shields.io/badge/LinkedIn-Conectemos-0A66C2?style=for-the-badge&logo=linkedin"/>
-  </a>
-</p>
+    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#174BD9"/>
+      <stop offset="100%" stop-color="#3535C5"/>
+    </linearGradient>
 
----
+    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#28C7DF"/>
+      <stop offset="100%" stop-color="#35B6D0"/>
+    </linearGradient>
 
-<!-- ============== ABOUT ME ============== -->
+    <!-- FONDO -->
+    <pattern id="dots" width="24" height="24"
+             patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#30363D"/>
+    </pattern>
 
-## 👨‍💻 Sobre mí
+    <clipPath id="frame">
+      <rect width="1000" height="300" rx="18"/>
+    </clipPath>
+  </defs>
 
-¡Bienvenido a mi espacio tecnológico!
+  <style>
+    .sans {
+      font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+    }
 
-Soy **Luis Diego Sipion Galvez**, apasionado por la tecnología, el desarrollo de software y la innovación.
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
 
-Me interesa construir soluciones tecnológicas que combinen programación, inteligencia artificial y ciberseguridad para resolver problemas del mundo real.
+    .typed {
+      font-size: 22px;
+      fill: #C9D1D9;
+    }
 
-- 💻 Desarrollo de software y aplicaciones.
-- 🤖 Inteligencia artificial y nuevas tecnologías.
-- 🔐 Seguridad informática y ciberseguridad.
-- 🚀 Desarrollo de proyectos tecnológicos.
-- 📚 Aprendizaje continuo y crecimiento profesional.
+    /* CURSOR */
+    .blink {
+      animation: bl 1s steps(1,end) infinite;
+    }
 
-> "La tecnología no solo consiste en crear soluciones, sino en construir un futuro mejor y más seguro."
+    @keyframes bl {
+      50% { opacity: 0; }
+    }
 
----
+    /* LÍNEA DEGRADADA */
+    .grow {
+      animation: gr 1.6s ease-out forwards;
+      transform-origin: 64px 0;
+      transform: scaleX(0);
+    }
 
-<!-- ============== TECHNOLOGIES ============== -->
+    @keyframes gr {
+      to { transform: scaleX(1); }
+    }
 
-## 🛠️ Tecnologías y herramientas
+    /* TEXTO 1 */
+    @keyframes r0 {
+      0% {
+        width: 0;
+        animation-timing-function: steps(38,end);
+      }
+      12.67%, 26.67% {
+        width: 509.4px;
+        animation-timing-function: steps(38,end);
+      }
+      31.67%, 100% { width: 0; }
+    }
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,html,css,react,nodejs,git,github,vscode,linux,docker&theme=dark" />
-</p>
+    @keyframes c0 {
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+        animation-timing-function: steps(38,end);
+      }
+      12.67%, 26.67% {
+        transform: translateX(509.4px);
+        opacity: 1;
+        animation-timing-function: steps(38,end);
+      }
+      31.67% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      31.68%, 100% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+    }
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Artificial_Intelligence-00C2FF?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Cybersecurity-003B70?style=for-the-badge&logo=hackthebox&logoColor=white"/>
-</p>
+    .r0 { animation: r0 12s infinite; }
+    .c0 { animation: c0 12s infinite; }
 
----
+    /* TEXTO 2 */
+    @keyframes r1 {
+      0%, 33.33% {
+        width: 0;
+        animation-timing-function: steps(36,end);
+      }
+      46%, 60% {
+        width: 482.8px;
+        animation-timing-function: steps(36,end);
+      }
+      65%, 100% { width: 0; }
+    }
 
-<!-- ============== PROJECTS ============== -->
+    @keyframes c1 {
+      0%, 33.33% {
+        transform: translateX(0);
+        opacity: 0;
+        animation-timing-function: steps(36,end);
+      }
+      33.34% {
+        transform: translateX(0);
+        opacity: 1;
+        animation-timing-function: steps(36,end);
+      }
+      46%, 60% {
+        transform: translateX(482.8px);
+        opacity: 1;
+        animation-timing-function: steps(36,end);
+      }
+      65% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      65.01%, 100% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+    }
 
-## 🚀 Proyectos destacados
+    .r1 { animation: r1 12s infinite; }
+    .c1 { animation: c1 12s infinite; }
 
-<p align="center">
-  Aquí encontrarás algunos de mis proyectos y experimentos tecnológicos.
-</p>
+    /* TEXTO 3 */
+    @keyframes r2 {
+      0%, 66.67% {
+        width: 0;
+        animation-timing-function: steps(35,end);
+      }
+      79.33%, 93.33% {
+        width: 469.5px;
+        animation-timing-function: steps(35,end);
+      }
+      98.33%, 100% { width: 0; }
+    }
 
-<table>
-<tr>
-<td width="50%" valign="top">
+    @keyframes c2 {
+      0%, 66.67% {
+        transform: translateX(0);
+        opacity: 0;
+        animation-timing-function: steps(35,end);
+      }
+      66.68% {
+        transform: translateX(0);
+        opacity: 1;
+        animation-timing-function: steps(35,end);
+      }
+      79.33%, 93.33% {
+        transform: translateX(469.5px);
+        opacity: 1;
+        animation-timing-function: steps(35,end);
+      }
+      98.33% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      98.34%, 100% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+    }
 
-### 💻 Desarrollo de software
+    .r2 { animation: r2 12s infinite; }
+    .c2 { animation: c2 12s infinite; }
 
-Aplicaciones y soluciones tecnológicas orientadas a resolver problemas reales.
+    /* ANIMACIÓN DEL CUBO */
+    .cube-float {
+      animation: cubeFloat 4s ease-in-out infinite;
+    }
 
-**Estado:** En constante desarrollo.
+    @keyframes cubeFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
 
-</td>
-<td width="50%" valign="top">
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .grow { transform: none; }
+    }
+  </style>
 
-### 🤖 Inteligencia artificial
+  <!-- FONDO PRINCIPAL -->
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="300" fill="#0D1117"/>
+    <rect width="1000" height="300" fill="url(#dots)"/>
 
-Exploración de herramientas y soluciones basadas en inteligencia artificial.
+    <circle cx="820" cy="60" r="240" fill="url(#g1)">
+      <animate attributeName="cx"
+               values="820;760;820"
+               dur="14s"
+               repeatCount="indefinite"/>
+    </circle>
 
-**Estado:** Aprendizaje y experimentación.
+    <circle cx="120" cy="300" r="260" fill="url(#g2)">
+      <animate attributeName="cy"
+               values="300;250;300"
+               dur="11s"
+               repeatCount="indefinite"/>
+    </circle>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+    <rect x=".75" y=".75"
+          width="998.5" height="298.5"
+          rx="17.5"
+          fill="none"
+          stroke="#30363D"
+          stroke-width="1.5"/>
+  </g>
 
-### 🛡️ Ciberseguridad
+  <!-- PRESENTACIÓN -->
+  <text class="mono"
+        x="64" y="72"
+        font-size="18"
+        fill="#8B949E">
+    hola, soy
+  </text>
 
-Interés en seguridad informática, protección de sistemas y buenas prácticas.
+  <text class="sans"
+        x="62" y="134"
+        font-size="60"
+        font-weight="700"
+        fill="#F0F6FC"
+        letter-spacing="-1">
+    Luis Diego Sipion Galvez
+  </text>
 
-**Estado:** Aprendizaje continuo.
+  <!-- LÍNEA ANIMADA -->
+  <rect class="grow"
+        x="64" y="152"
+        width="150" height="4"
+        rx="2"
+        fill="url(#bar)"/>
 
-</td>
-<td width="50%" valign="top">
+  <!-- TERMINAL -->
+  <text class="mono"
+        x="64" y="214"
+        font-size="22"
+        fill="#8B5CF6">
+    ❯
+  </text>
 
-### ⚙️ Automatización
+  <!-- PRIMER TEXTO -->
+  <clipPath id="clip0">
+    <rect class="r0"
+          x="104" y="190"
+          width="509.4" height="34"/>
+  </clipPath>
 
-Desarrollo de herramientas para optimizar procesos y mejorar la productividad.
+  <text class="mono typed"
+        x="104" y="214"
+        clip-path="url(#clip0)">
+    ingeniería de software IA y Ciberseguridad
+  </text>
 
-**Estado:** En exploración.
+  <g class="c0">
+    <rect class="blink"
+          x="106" y="195"
+          width="11" height="24"
+          fill="#22D3EE"/>
+  </g>
 
-</td>
-</tr>
-</table>
+  <!-- SEGUNDO TEXTO -->
+  <clipPath id="clip1">
+    <rect class="r1"
+          x="104" y="190"
+          width="482.8" height="34"/>
+  </clipPath>
 
----
+  <text class="mono typed"
+        x="104" y="214"
+        clip-path="url(#clip1)">
+    web · bases de datos · deep learning
+  </text>
 
-<!-- ============== GITHUB STATS ============== -->
+  <g class="c1" opacity="0">
+    <rect class="blink"
+          x="106" y="195"
+          width="11" height="24"
+          fill="#22D3EE"/>
+  </g>
 
-## 📊 Estadísticas de GitHub
+  <!-- TERCER TEXTO -->
+  <clipPath id="clip2">
+    <rect class="r2"
+          x="104" y="190"
+          width="469.5" height="34"/>
+  </clipPath>
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00C2FF&icon_color=00C2FF"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00C2FF"/>
-</p>
+  <text class="mono typed"
+        x="104" y="214"
+        clip-path="url(#clip2)">
+    buscando prácticas preprofesionales
+  </text>
 
-<p align="center">
-  <img width="80%" src="https://streak-stats.demolab.com/?user=TU_USUARIO&theme=tokyonight&hide_border=true&background=0D1117&stroke=00C2FF&ring=00C2FF&fire=00C2FF&currStreakLabel=00C2FF"/>
-</p>
+  <g class="c2" opacity="0">
+    <rect class="blink"
+          x="106" y="195"
+          width="11" height="24"
+          fill="#22D3EE"/>
+  </g>
 
----
+  <!-- ================================= -->
+  <!-- CUBO 3D A LA DERECHA DE LAS LETRAS -->
+  <!-- ================================= -->
 
-<!-- ============== OBJECTIVES ============== -->
+  <g transform="translate(770 66) scale(0.35)">
+    <g class="cube-float">
 
-## 🎯 Objetivos profesionales
+      <!-- CARAS DEL CUBO -->
+      <g stroke="#FFFFFF"
+         stroke-width="4"
+         stroke-linejoin="round">
 
-- 🚀 Crear soluciones tecnológicas innovadoras.
-- 🤖 Profundizar en inteligencia artificial.
-- 🔐 Fortalecer mis conocimientos en ciberseguridad.
-- 💻 Desarrollar software escalable y eficiente.
-- 🌎 Participar en proyectos tecnológicos de impacto.
+        <!-- SUPERIOR -->
+        <path d="M257 17 L490 145 L257 273 L22 145 Z"
+              fill="url(#cubeTop)"/>
 
----
+        <!-- IZQUIERDA -->
+        <path d="M22 145 L257 273 L257 495 L22 369 Z"
+              fill="url(#cubeLeft)"/>
 
-<!-- ============== CONTACT ============== -->
+        <!-- DERECHA -->
+        <path d="M490 145 L257 273 L257 495 L490 369 Z"
+              fill="url(#cubeRight)"/>
+      </g>
 
-## 🤝 Conectemos
+      <!-- SÍMBOLO SUPERIOR -->
+      <g fill="none"
+         stroke="#FFFFFF"
+         stroke-width="27"
+         stroke-linecap="round"
+         stroke-linejoin="round">
 
-<p align="center">
-  ¿Tienes una idea, proyecto o propuesta de colaboración?
-  ¡Me encantaría conectar contigo!
-</p>
+        <path d="M108 83 L219 145"/>
+        <path d="M404 83 L294 145"/>
+      </g>
 
-<p align="center">
-  <a href="https://github.com/TU_USUARIO">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/TU_PERFIL/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:TU_CORREO">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-</p>
+      <ellipse cx="257" cy="163"
+               rx="59" ry="34"
+               fill="#FFFFFF"/>
 
----
+      <!-- SÍMBOLO IZQUIERDO -->
+      <ellipse cx="126" cy="313"
+               rx="32" ry="56"
+               transform="rotate(-28 126 313)"
+               fill="#FFFFFF"/>
 
-<p align="center">
-  <i>💻 CREAR · 🤖 INNOVAR · 🛡️ PROTEGER</i>
-</p>
+      <path d="M145 334 L257 398"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="25"
+            stroke-linecap="round"/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C2FF,50:003B70,100:0D1117&height=120&section=footer"/>
-</p>
+      <!-- SÍMBOLO DERECHO -->
+      <ellipse cx="387" cy="313"
+               rx="32" ry="56"
+               transform="rotate(28 387 313)"
+               fill="#FFFFFF"/>
+
+      <path d="M367 334 L257 398"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="25"
+            stroke-linecap="round"/>
+
+    </g>
+  </g>
+
+  <!-- UBICACIÓN -->
+  <text class="mono"
+        x="64" y="266"
+        font-size="14"
+        fill="#6E7681">
+    Lima, Perú
+  </text>
+
+</svg>
