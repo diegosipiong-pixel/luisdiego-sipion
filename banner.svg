@@ -7,10 +7,10 @@
      aria-labelledby="title desc">
 
   <title id="title">Luis Diego Sipion Galvez</title>
-  <desc id="desc">Estudiante de Ingeniería de Software, Inteligencia Artificial y Ciberseguridad.</desc>
+  <desc id="desc">Software Engineering, Artificial Intelligence and Cybersecurity</desc>
 
   <defs>
-    <!-- PALETA DE COLORES -->
+    <!-- PALETA -->
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22D3EE"/>
       <stop offset="52%" stop-color="#3B82F6"/>
@@ -78,13 +78,24 @@
       50% { transform: translateY(-6px); }
     }
 
-    .light,
+    .light {
+      animation: travel 4s linear infinite;
+    }
+
     .light-core {
       animation: travel 4s linear infinite;
     }
 
     @keyframes travel {
       to { stroke-dashoffset: -100; }
+    }
+
+    .cursor {
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
     }
 
     .line {
@@ -127,16 +138,16 @@
           stroke-width="1.5"/>
   </g>
 
-  <!-- PRESENTACIÓN -->
+  <!-- CONTENIDO PRINCIPAL -->
   <g class="sans">
 
-    <!-- ESPECIALIDAD PRINCIPAL -->
+    <!-- IDENTIFICADOR -->
     <text x="72" y="70"
           class="mono"
           font-size="13"
           letter-spacing="3"
           fill="#22D3EE">
-      INGENIERÍA DE SOFTWARE
+      SOFTWARE ENGINEERING
     </text>
 
     <!-- NOMBRE -->
@@ -156,7 +167,7 @@
       SIPION GALVEZ
     </text>
 
-    <!-- LÍNEA DECORATIVA -->
+    <!-- LÍNEA DE ACENTO -->
     <rect class="line"
           x="72" y="185"
           width="100" height="3"
@@ -164,16 +175,14 @@
           fill="url(#accent)"/>
 
     <!-- ESPECIALIDADES -->
-    <g font-size="13.5" fill="#C5CEDA">
-
-      <text x="72" y="221">Desarrollo de software</text>
+    <g font-size="14" fill="#C5CEDA">
+      <text x="72" y="221">Software Development</text>
       <circle cx="231" cy="216" r="2.5" fill="#3B82F6"/>
 
-      <text x="247" y="221">Inteligencia artificial</text>
+      <text x="247" y="221">Artificial Intelligence</text>
       <circle cx="410" cy="216" r="2.5" fill="#3B82F6"/>
 
-      <text x="426" y="221">Ciberseguridad</text>
-
+      <text x="426" y="221">Cybersecurity</text>
     </g>
 
     <!-- UBICACIÓN -->
@@ -193,7 +202,7 @@
       </text>
     </g>
 
-    <!-- FRASE PERSONAL -->
+    <!-- ESTADO -->
     <g transform="translate(72 276)">
       <circle cx="4" cy="0" r="3" fill="#22C55E"/>
 
@@ -202,7 +211,7 @@
             font-size="10"
             letter-spacing="1"
             fill="#64748B">
-        CONSTRUYENDO EL FUTURO
+        BUILDING THE FUTURE
       </text>
     </g>
 
@@ -218,7 +227,7 @@
   <g transform="translate(690 48) scale(0.42)">
     <g class="cube-float">
 
-      <!-- CARAS DEL CUBO -->
+      <!-- CARAS -->
       <path d="M257 17 L490 145 L257 273 L22 145 Z"
             fill="url(#cubeTop)"/>
 
@@ -317,7 +326,7 @@
         letter-spacing="2"
         text-anchor="middle"
         fill="#64748B">
-    CÓDIGO · SEGURIDAD · INNOVACIÓN
+    CODE · SECURE · INNOVATE
   </text>
 
   <circle cx="950" cy="266" r="3"
