@@ -9,7 +9,7 @@
 <!-- ✏️ BANNER: animación propia en assets/banner.svg (nombre + texto que se escribe solo + red neuronal).
      Para cambiar las frases que se escriben, edita el archivo SVG (busca las etiquetas <text class="mono typed">). -->
 <p align="center">
-  <img src="./bannr.svg" width="100%" alt="Edwar Alama — Ingeniería de Software con IA · SENATI">
+  <img src="./banner.svg" width="100%" alt="Edwar Alama — Ingeniería de Software con IA · SENATI">
 </p>
 
 <!-- ✏️ ESTADO: cambia el texto del badge si ya conseguiste tus prácticas. -->
