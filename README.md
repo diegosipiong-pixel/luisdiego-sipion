@@ -1,421 +1,80 @@
-
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1000 300"
-     width="1000" height="300"
-     role="img"
-     aria-labelledby="t d">
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkNmE5MjJlOC1iM2MzLTQzMDktYjdlZC00MTg2YjU1ZjBlNzcAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFQrWK4T4dzgGTEDagdKqXgAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5NGVlNTE2NC04NjVhLTQyYWItOGRiMS1mMzM5NTBiODBiZTVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNomOXgRS30m5UshgtJrMJNmgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggwwI/GqR/+UkrXU4bstB6euLBO90XniPNsac+OZkOS8GkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGG4todxQanRLOfoFP6YBOUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCmYCVEMklJiUn05n2rWZ1UqUfHkn85zyjGVA4LvEP302RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi5Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmQ2YTkyMmU4LWIzYzMtNDMwOS1iN2VkLTQxODZiNTVmMGU3Ny9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjBiOTQwODIyLTM3ODItNDc1OC05YmZmLWE0OGE0MTI1MmFkYnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDDAj8apH/5SStdThuy0Hp64sE73ReeI82xpz45mQ5LwaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggOYF6bll/QzTZTYNK1B/9bJxoL/eYWRTyj33rJY6UbFeiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg5YoWyHF+XJKBdO3N7lgdRQKb0CTbrTdr086hGcRMgPJ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQBgVwt1hPR97/butiPOpiKaLgozktS6DqixMhD8Pqiqesre8P6/xZ4uLx1v44kq4nZsi0HhZRGfcWi6qbhvSX0I=</c2pa:manifest></metadata>
   <title id="t">Luis Diego Sipion Galvez</title>
   <desc id="d">Estudiante de Ingeniería de Software con IA y Ciberseguridad</desc>
-
   <defs>
-    <!-- DEGRADADOS -->
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset=".5" stop-color="#3B82F6"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-
-    <radialGradient id="g1">
-      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="g2">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- COLORES DEL CUBO -->
-    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#42A5F5"/>
-      <stop offset="100%" stop-color="#1685D5"/>
-    </linearGradient>
-
-    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#174BD9"/>
-      <stop offset="100%" stop-color="#3535C5"/>
-    </linearGradient>
-
-    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#28C7DF"/>
-      <stop offset="100%" stop-color="#35B6D0"/>
-    </linearGradient>
-
-    <!-- FONDO -->
-    <pattern id="dots" width="24" height="24"
-             patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#30363D"/>
-    </pattern>
-
-    <clipPath id="frame">
-      <rect width="1000" height="300" rx="18"/>
-    </clipPath>
+    <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="0.5" stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <radialGradient id="g1"><stop offset="0" stop-color="#8B5CF6" stop-opacity="0.35"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#30363D"/></pattern>
+    <clipPath id="frame"><rect width="1000" height="300" rx="18"/></clipPath>
   </defs>
-
   <style>
-    .sans {
-      font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;
-    }
-
-    .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    }
-
-    .typed {
-      font-size: 22px;
-      fill: #C9D1D9;
-    }
-
-    /* CURSOR */
-    .blink {
-      animation: bl 1s steps(1,end) infinite;
-    }
-
-    @keyframes bl {
-      50% { opacity: 0; }
-    }
-
-    /* LÍNEA DEGRADADA */
-    .grow {
-      animation: gr 1.6s ease-out forwards;
-      transform-origin: 64px 0;
-      transform: scaleX(0);
-    }
-
-    @keyframes gr {
-      to { transform: scaleX(1); }
-    }
-
-    /* TEXTO 1 */
-    @keyframes r0 {
-      0% {
-        width: 0;
-        animation-timing-function: steps(38,end);
-      }
-      12.67%, 26.67% {
-        width: 509.4px;
-        animation-timing-function: steps(38,end);
-      }
-      31.67%, 100% { width: 0; }
-    }
-
-    @keyframes c0 {
-      0% {
-        transform: translateX(0);
-        opacity: 1;
-        animation-timing-function: steps(38,end);
-      }
-      12.67%, 26.67% {
-        transform: translateX(509.4px);
-        opacity: 1;
-        animation-timing-function: steps(38,end);
-      }
-      31.67% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-      31.68%, 100% {
-        transform: translateX(0);
-        opacity: 0;
-      }
-    }
-
-    .r0 { animation: r0 12s infinite; }
-    .c0 { animation: c0 12s infinite; }
-
-    /* TEXTO 2 */
-    @keyframes r1 {
-      0%, 33.33% {
-        width: 0;
-        animation-timing-function: steps(36,end);
-      }
-      46%, 60% {
-        width: 482.8px;
-        animation-timing-function: steps(36,end);
-      }
-      65%, 100% { width: 0; }
-    }
-
-    @keyframes c1 {
-      0%, 33.33% {
-        transform: translateX(0);
-        opacity: 0;
-        animation-timing-function: steps(36,end);
-      }
-      33.34% {
-        transform: translateX(0);
-        opacity: 1;
-        animation-timing-function: steps(36,end);
-      }
-      46%, 60% {
-        transform: translateX(482.8px);
-        opacity: 1;
-        animation-timing-function: steps(36,end);
-      }
-      65% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-      65.01%, 100% {
-        transform: translateX(0);
-        opacity: 0;
-      }
-    }
-
-    .r1 { animation: r1 12s infinite; }
-    .c1 { animation: c1 12s infinite; }
-
-    /* TEXTO 3 */
-    @keyframes r2 {
-      0%, 66.67% {
-        width: 0;
-        animation-timing-function: steps(35,end);
-      }
-      79.33%, 93.33% {
-        width: 469.5px;
-        animation-timing-function: steps(35,end);
-      }
-      98.33%, 100% { width: 0; }
-    }
-
-    @keyframes c2 {
-      0%, 66.67% {
-        transform: translateX(0);
-        opacity: 0;
-        animation-timing-function: steps(35,end);
-      }
-      66.68% {
-        transform: translateX(0);
-        opacity: 1;
-        animation-timing-function: steps(35,end);
-      }
-      79.33%, 93.33% {
-        transform: translateX(469.5px);
-        opacity: 1;
-        animation-timing-function: steps(35,end);
-      }
-      98.33% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-      98.34%, 100% {
-        transform: translateX(0);
-        opacity: 0;
-      }
-    }
-
-    .r2 { animation: r2 12s infinite; }
-    .c2 { animation: c2 12s infinite; }
-
-    /* ANIMACIÓN DEL CUBO */
-    .cube-float {
-      animation: cubeFloat 4s ease-in-out infinite;
-    }
-
-    @keyframes cubeFloat {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-      .grow { transform: none; }
-    }
+    .sans{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
+    .typed{font-size:22px;fill:#C9D1D9}
+    .blink{animation:bl 1s steps(1,end) infinite}
+    @keyframes bl{50%{opacity:0}}
+    .grow{animation:gr 1.6s ease-out forwards;transform-origin:64px 0;transform:scaleX(0)}
+    @keyframes gr{to{transform:scaleX(1)}}
+    @keyframes r0{0%{width:0;animation-timing-function:steps(38,end)}12.67%,26.67%{width:509.4px;animation-timing-function:steps(38,end)}31.67%,100%{width:0}}
+    @keyframes c0{0%{transform:translateX(0);opacity:1;animation-timing-function:steps(38,end)}12.67%,26.67%{transform:translateX(509.4px);opacity:1;animation-timing-function:steps(38,end)}31.67%{transform:translateX(0);opacity:1}31.68%,100%{transform:translateX(0);opacity:0}}
+    .r0{animation:r0 12s infinite} .c0{animation:c0 12s infinite}
+    @keyframes r1{0%,33.33%{width:0;animation-timing-function:steps(36,end)}46.00%,60.00%{width:482.8px;animation-timing-function:steps(36,end)}65.00%,100%{width:0}}
+    @keyframes c1{0%,33.33%{transform:translateX(0);opacity:0;animation-timing-function:steps(36,end)}33.34%{transform:translateX(0);opacity:1;animation-timing-function:steps(36,end)}46.00%,60.00%{transform:translateX(482.8px);opacity:1;animation-timing-function:steps(36,end)}65.00%{transform:translateX(0);opacity:1}65.01%,100%{transform:translateX(0);opacity:0}}
+    .r1{animation:r1 12s infinite} .c1{animation:c1 12s infinite}
+    @keyframes r2{0%,66.67%{width:0;animation-timing-function:steps(35,end)}79.33%,93.33%{width:469.5px;animation-timing-function:steps(35,end)}98.33%,100%{width:0}}
+    @keyframes c2{0%,66.67%{transform:translateX(0);opacity:0;animation-timing-function:steps(35,end)}66.68%{transform:translateX(0);opacity:1;animation-timing-function:steps(35,end)}79.33%,93.33%{transform:translateX(469.5px);opacity:1;animation-timing-function:steps(35,end)}98.33%{transform:translateX(0);opacity:1}98.34%,100%{transform:translateX(0);opacity:0}}
+    .r2{animation:r2 12s infinite} .c2{animation:c2 12s infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important} .grow{transform:none}}
   </style>
-
-  <!-- FONDO PRINCIPAL -->
   <g clip-path="url(#frame)">
     <rect width="1000" height="300" fill="#0D1117"/>
     <rect width="1000" height="300" fill="url(#dots)"/>
-
-    <circle cx="820" cy="60" r="240" fill="url(#g1)">
-      <animate attributeName="cx"
-               values="820;760;820"
-               dur="14s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="120" cy="300" r="260" fill="url(#g2)">
-      <animate attributeName="cy"
-               values="300;250;300"
-               dur="11s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <rect x=".75" y=".75"
-          width="998.5" height="298.5"
-          rx="17.5"
-          fill="none"
-          stroke="#30363D"
-          stroke-width="1.5"/>
+    <circle cx="820" cy="60" r="240" fill="url(#g1)"><animate attributeName="cx" values="820;760;820" dur="14s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="300" r="260" fill="url(#g2)"><animate attributeName="cy" values="300;250;300" dur="11s" repeatCount="indefinite"/></circle>
+    <rect x="0.75" y="0.75" width="998.5" height="298.5" rx="17.5" fill="none" stroke="#30363D" stroke-width="1.5"/>
   </g>
 
-  <!-- PRESENTACIÓN -->
-  <text class="mono"
-        x="64" y="72"
-        font-size="18"
-        fill="#8B949E">
-    hola, soy
-  </text>
+  <text class="mono" x="64" y="72" font-size="18" fill="#8B949E">hola, soy</text>
+  <text class="sans" x="62" y="134" font-size="60" font-weight="700" fill="#F0F6FC" letter-spacing="-1">Luis Diego Sipion Galvez</text>
+  <rect class="grow" x="64" y="152" width="150" height="4" rx="2" fill="url(#bar)"/>
 
-  <text class="sans"
-        x="62" y="134"
-        font-size="60"
-        font-weight="700"
-        fill="#F0F6FC"
-        letter-spacing="-1">
-    Luis Diego Sipion Galvez
-  </text>
+  <text class="mono" x="64" y="214" font-size="22" fill="#8B5CF6">❯</text>
+  
+    <clipPath id="clip0"><rect class="r0" x="104" y="190" width="509.4" height="34"/></clipPath>
+    <text class="mono typed" x="104" y="214" clip-path="url(#clip0)">ingeniería de software IA y Ciberseguridad</text>
+    <g class="c0"><rect class="blink" x="106" y="195" width="11" height="24" fill="#22D3EE"/></g>
+    <clipPath id="clip1"><rect class="r1" x="104" y="190" width="0" height="34"/></clipPath>
+    <text class="mono typed" x="104" y="214" clip-path="url(#clip1)">web · bases de datos · deep learning</text>
+    <g class="c1" opacity="0"><rect class="blink" x="106" y="195" width="11" height="24" fill="#22D3EE"/></g>
+    <clipPath id="clip2"><rect class="r2" x="104" y="190" width="0" height="34"/></clipPath>
+    <text class="mono typed" x="104" y="214" clip-path="url(#clip2)">buscando prácticas preprofesionales</text>
+    <g class="c2" opacity="0"><rect class="blink" x="106" y="195" width="11" height="24" fill="#22D3EE"/></g>
 
-  <!-- LÍNEA ANIMADA -->
-  <rect class="grow"
-        x="64" y="152"
-        width="150" height="4"
-        rx="2"
-        fill="url(#bar)"/>
-
-  <!-- TERMINAL -->
-  <text class="mono"
-        x="64" y="214"
-        font-size="22"
-        fill="#8B5CF6">
-    ❯
-  </text>
-
-  <!-- PRIMER TEXTO -->
-  <clipPath id="clip0">
-    <rect class="r0"
-          x="104" y="190"
-          width="509.4" height="34"/>
-  </clipPath>
-
-  <text class="mono typed"
-        x="104" y="214"
-        clip-path="url(#clip0)">
-    ingeniería de software IA y Ciberseguridad
-  </text>
-
-  <g class="c0">
-    <rect class="blink"
-          x="106" y="195"
-          width="11" height="24"
-          fill="#22D3EE"/>
+  <g stroke="#30363D" stroke-width="1.2">
+    <line x1="730" y1="95" x2="820" y2="70"/>
+    <line x1="730" y1="95" x2="820" y2="125"/>
+    <line x1="730" y1="95" x2="820" y2="180"/>
+    <line x1="730" y1="95" x2="820" y2="235"/>
+    <line x1="730" y1="150" x2="820" y2="70"/>
+    <line x1="730" y1="150" x2="820" y2="125"/>
+    <line x1="730" y1="150" x2="820" y2="180"/>
+    <line x1="730" y1="150" x2="820" y2="235"/>
+    <line x1="730" y1="205" x2="820" y2="70"/>
+    <line x1="730" y1="205" x2="820" y2="125"/>
+    <line x1="730" y1="205" x2="820" y2="180"/>
+    <line x1="730" y1="205" x2="820" y2="235"/>
+    <line x1="820" y1="70" x2="910" y2="120"/>
+    <line x1="820" y1="70" x2="910" y2="180"/>
+    <line x1="820" y1="125" x2="910" y2="120"/>
+    <line x1="820" y1="125" x2="910" y2="180"/>
+    <line x1="820" y1="180" x2="910" y2="120"/>
+    <line x1="820" y1="180" x2="910" y2="180"/>
+    <line x1="820" y1="235" x2="910" y2="120"/>
+    <line x1="820" y1="235" x2="910" y2="180"/>
   </g>
+  <circle r="3" fill="#22D3EE"><animateMotion dur="3.2s" begin="0.0s" repeatCount="indefinite" path="M730,95 L820,125 L910,120"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="0.0s" repeatCount="indefinite"/></circle><circle r="3" fill="#A78BFA"><animateMotion dur="3.2s" begin="0.8s" repeatCount="indefinite" path="M730,205 L820,180 L910,180"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></circle><circle r="3" fill="#22D3EE"><animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M730,150 L820,235 L910,180"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></circle><circle r="3" fill="#60A5FA"><animateMotion dur="3.2s" begin="2.4000000000000004s" repeatCount="indefinite" path="M730,150 L820,70 L910,120"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="2.4000000000000004s" repeatCount="indefinite"/></circle>
+  <circle cx="730" cy="95" r="9" fill="#0D1117" stroke="#3B82F6" stroke-width="2.5"/><circle cx="730" cy="95" r="3.5" fill="#3B82F6"><animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="730" cy="150" r="9" fill="#0D1117" stroke="#3B82F6" stroke-width="2.5"/><circle cx="730" cy="150" r="3.5" fill="#3B82F6"><animate attributeName="opacity" values="0.35;1;0.35" dur="2.75s" repeatCount="indefinite"/></circle><circle cx="730" cy="205" r="9" fill="#0D1117" stroke="#3B82F6" stroke-width="2.5"/><circle cx="730" cy="205" r="3.5" fill="#3B82F6"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.0999999999999996s" repeatCount="indefinite"/></circle><circle cx="820" cy="70" r="9" fill="#0D1117" stroke="#8B5CF6" stroke-width="2.5"/><circle cx="820" cy="70" r="3.5" fill="#8B5CF6"><animate attributeName="opacity" values="0.35;1;0.35" dur="2.9s" repeatCount="indefinite"/></circle><circle cx="820" cy="125" r="9" fill="#0D1117" stroke="#8B5CF6" stroke-width="2.5"/><circle cx="820" cy="125" r="3.5" fill="#8B5CF6"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.25s" repeatCount="indefinite"/></circle><circle cx="820" cy="180" r="9" fill="#0D1117" stroke="#8B5CF6" stroke-width="2.5"/><circle cx="820" cy="180" r="3.5" fill="#8B5CF6"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.5999999999999996s" repeatCount="indefinite"/></circle><circle cx="820" cy="235" r="9" fill="#0D1117" stroke="#8B5CF6" stroke-width="2.5"/><circle cx="820" cy="235" r="3.5" fill="#8B5CF6"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.9499999999999997s" repeatCount="indefinite"/></circle><circle cx="910" cy="120" r="9" fill="#0D1117" stroke="#22D3EE" stroke-width="2.5"/><circle cx="910" cy="120" r="3.5" fill="#22D3EE"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.4s" repeatCount="indefinite"/></circle><circle cx="910" cy="180" r="9" fill="#0D1117" stroke="#22D3EE" stroke-width="2.5"/><circle cx="910" cy="180" r="3.5" fill="#22D3EE"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.75s" repeatCount="indefinite"/></circle>
 
-  <!-- SEGUNDO TEXTO -->
-  <clipPath id="clip1">
-    <rect class="r1"
-          x="104" y="190"
-          width="482.8" height="34"/>
-  </clipPath>
-
-  <text class="mono typed"
-        x="104" y="214"
-        clip-path="url(#clip1)">
-    web · bases de datos · deep learning
-  </text>
-
-  <g class="c1" opacity="0">
-    <rect class="blink"
-          x="106" y="195"
-          width="11" height="24"
-          fill="#22D3EE"/>
-  </g>
-
-  <!-- TERCER TEXTO -->
-  <clipPath id="clip2">
-    <rect class="r2"
-          x="104" y="190"
-          width="469.5" height="34"/>
-  </clipPath>
-
-  <text class="mono typed"
-        x="104" y="214"
-        clip-path="url(#clip2)">
-    buscando prácticas preprofesionales
-  </text>
-
-  <g class="c2" opacity="0">
-    <rect class="blink"
-          x="106" y="195"
-          width="11" height="24"
-          fill="#22D3EE"/>
-  </g>
-
-  <!-- ================================= -->
-  <!-- CUBO 3D A LA DERECHA DE LAS LETRAS -->
-  <!-- ================================= -->
-
-  <g transform="translate(770 66) scale(0.35)">
-    <g class="cube-float">
-
-      <!-- CARAS DEL CUBO -->
-      <g stroke="#FFFFFF"
-         stroke-width="4"
-         stroke-linejoin="round">
-
-        <!-- SUPERIOR -->
-        <path d="M257 17 L490 145 L257 273 L22 145 Z"
-              fill="url(#cubeTop)"/>
-
-        <!-- IZQUIERDA -->
-        <path d="M22 145 L257 273 L257 495 L22 369 Z"
-              fill="url(#cubeLeft)"/>
-
-        <!-- DERECHA -->
-        <path d="M490 145 L257 273 L257 495 L490 369 Z"
-              fill="url(#cubeRight)"/>
-      </g>
-
-      <!-- SÍMBOLO SUPERIOR -->
-      <g fill="none"
-         stroke="#FFFFFF"
-         stroke-width="27"
-         stroke-linecap="round"
-         stroke-linejoin="round">
-
-        <path d="M108 83 L219 145"/>
-        <path d="M404 83 L294 145"/>
-      </g>
-
-      <ellipse cx="257" cy="163"
-               rx="59" ry="34"
-               fill="#FFFFFF"/>
-
-      <!-- SÍMBOLO IZQUIERDO -->
-      <ellipse cx="126" cy="313"
-               rx="32" ry="56"
-               transform="rotate(-28 126 313)"
-               fill="#FFFFFF"/>
-
-      <path d="M145 334 L257 398"
-            fill="none"
-            stroke="#FFFFFF"
-            stroke-width="25"
-            stroke-linecap="round"/>
-
-      <!-- SÍMBOLO DERECHO -->
-      <ellipse cx="387" cy="313"
-               rx="32" ry="56"
-               transform="rotate(28 387 313)"
-               fill="#FFFFFF"/>
-
-      <path d="M367 334 L257 398"
-            fill="none"
-            stroke="#FFFFFF"
-            stroke-width="25"
-            stroke-linecap="round"/>
-
-    </g>
-  </g>
-
-  <!-- UBICACIÓN -->
-  <text class="mono"
-        x="64" y="266"
-        font-size="14"
-        fill="#6E7681">
-    Lima, Perú
-  </text>
-
+  <text class="mono" x="64" y="266" font-size="14" fill="#6E7681">Lima, Perú</text>
 </svg>
