@@ -4,30 +4,30 @@
      width="1000"
      height="300"
      role="img"
-     aria-labelledby="title desc">
+     aria-labelledby="titulo descripcion">
 
-  <title id="title">Luis Diego Sipion Galvez</title>
-  <desc id="desc">Ingeniería de Software, Inteligencia Artificial y Ciberseguridad</desc>
+  <title id="titulo">Luis Diego Sipion Galvez</title>
+  <desc id="descripcion">Ingeniería de Software, Inteligencia Artificial y Ciberseguridad</desc>
 
   <defs>
-    <!-- PALETA -->
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <!-- PALETA DE COLORES -->
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22D3EE"/>
       <stop offset="52%" stop-color="#3B82F6"/>
       <stop offset="100%" stop-color="#A855F7"/>
     </linearGradient>
 
-    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cuboSuperior" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#45B7F5"/>
       <stop offset="100%" stop-color="#1765C5"/>
     </linearGradient>
 
-    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cuboIzquierdo" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#2456D9"/>
       <stop offset="100%" stop-color="#272E9E"/>
     </linearGradient>
 
-    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cuboDerecho" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#29C6DC"/>
       <stop offset="100%" stop-color="#1689B5"/>
     </linearGradient>
@@ -38,12 +38,13 @@
       <stop offset="100%" stop-color="#A855F7"/>
     </linearGradient>
 
-    <radialGradient id="ambient">
+    <radialGradient id="luzAmbiental">
       <stop offset="0%" stop-color="#2563EB" stop-opacity=".16"/>
       <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
     </radialGradient>
 
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <!-- CUADRÍCULA DEL FONDO -->
+    <pattern id="cuadricula" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32"
             fill="none"
             stroke="#FFFFFF"
@@ -51,43 +52,14 @@
             stroke-width="1"/>
     </pattern>
 
-    <clipPath id="frame">
+    <!-- RECORTE DEL BANNER -->
+    <clipPath id="marco">
       <rect width="1000" height="300" rx="18"/>
     </clipPath>
 
-    <clipPath id="cubeClip">
+    <!-- RECORTE DEL CUBO -->
+    <clipPath id="recorteCubo">
       <path d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"/>
-    </clipPath>
-
-    <!-- RECORTES DE TEXTO ANIMADO -->
-    <clipPath id="typingClip1">
-      <rect x="97" y="202" width="0" height="27">
-        <animate attributeName="width"
-          values="0;0;250;250;0;0"
-          keyTimes="0;.04;.18;.28;.34;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <clipPath id="typingClip2">
-      <rect x="97" y="202" width="0" height="27">
-        <animate attributeName="width"
-          values="0;0;0;250;250;0;0"
-          keyTimes="0;.34;.38;.53;.63;.69;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-
-    <clipPath id="typingClip3">
-      <rect x="97" y="202" width="0" height="27">
-        <animate attributeName="width"
-          values="0;0;190;190;0;0"
-          keyTimes="0;.73;.88;.98;1;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
     </clipPath>
   </defs>
 
@@ -100,58 +72,55 @@
       font-family: 'SFMono-Regular', Consolas, monospace;
     }
 
-    .typing-text {
-      font-family: 'SFMono-Regular', Consolas, monospace;
-      font-size: 17px;
-      font-weight: 500;
-      fill: #C5CEDA;
+    /* ANIMACIÓN FLOTANTE DEL CUBO */
+    .cubo-flotante {
+      animation: flotar 5s ease-in-out infinite;
     }
 
-    .cube-float {
-      animation: float 5s ease-in-out infinite;
-    }
-
-    @keyframes float {
+    @keyframes flotar {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
 
-    .light {
-      animation: travel 4s linear infinite;
+    /* ANIMACIÓN DE LA LUZ */
+    .luz {
+      animation: recorrido 4s linear infinite;
     }
 
-    .light-core {
-      animation: travel 4s linear infinite;
+    .nucleo-luz {
+      animation: recorrido 4s linear infinite;
     }
 
-    @keyframes travel {
+    @keyframes recorrido {
       to { stroke-dashoffset: -100; }
     }
 
+    /* PARPADEO DEL CURSOR */
     .cursor {
-      animation: blink .8s steps(1) infinite;
+      animation: parpadear 1s steps(1) infinite;
     }
 
-    @keyframes blink {
+    @keyframes parpadear {
       50% { opacity: 0; }
     }
 
-    .line {
-      transform-box: fill-box;
+    /* APARICIÓN DE LA LÍNEA */
+    .linea {
       transform-origin: left;
-      animation: reveal 1.2s ease-out both;
+      animation: revelar 1.2s ease-out both;
     }
 
-    @keyframes reveal {
+    @keyframes revelar {
       from { transform: scaleX(0); opacity: 0; }
       to { transform: scaleX(1); opacity: 1; }
     }
 
-    .soft-glow {
-      animation: glow 4s ease-in-out infinite;
+    /* BRILLO SUAVE */
+    .brillo-suave {
+      animation: resplandor 4s ease-in-out infinite;
     }
 
-    @keyframes glow {
+    @keyframes resplandor {
       0%, 100% { opacity: .45; }
       50% { opacity: .9; }
     }
@@ -162,11 +131,11 @@
   </style>
 
   <!-- FONDO -->
-  <g clip-path="url(#frame)">
+  <g clip-path="url(#marco)">
     <rect width="1000" height="300" fill="#0B0F17"/>
-    <rect width="1000" height="300" fill="url(#grid)"/>
+    <rect width="1000" height="300" fill="url(#cuadricula)"/>
 
-    <circle cx="800" cy="150" r="260" fill="url(#ambient)"/>
+    <circle cx="800" cy="150" r="260" fill="url(#luzAmbiental)"/>
 
     <rect x=".75" y=".75"
           width="998.5" height="298.5"
@@ -186,7 +155,7 @@
           font-size="13"
           letter-spacing="3"
           fill="#22D3EE">
-      SOFTWARE ENGINEERING
+      INGENIERÍA DE SOFTWARE
     </text>
 
     <!-- NOMBRE -->
@@ -207,52 +176,21 @@
     </text>
 
     <!-- LÍNEA DE ACENTO -->
-    <rect class="line"
+    <rect class="linea"
           x="72" y="185"
           width="100" height="3"
           rx="2"
-          fill="url(#accent)"/>
+          fill="url(#acento)"/>
 
-    <!-- ESPECIALIDADES ANIMADAS -->
-    <g>
-      <text x="72" y="221"
-            class="mono"
-            font-size="18"
-            fill="#8B5CF6">❯</text>
+    <!-- ESPECIALIDADES -->
+    <g font-size="14" fill="#C5CEDA">
+      <text x="72" y="221">Desarrollo de Software</text>
+      <circle cx="231" cy="216" r="2.5" fill="#3B82F6"/>
 
-      <!-- INGENIERÍA DE SOFTWARE -->
-      <text x="97" y="221"
-            class="typing-text"
-            clip-path="url(#typingClip1)">
-        INGENIERÍA DE SOFTWARE
-      </text>
+      <text x="247" y="221">Inteligencia Artificial</text>
+      <circle cx="410" cy="216" r="2.5" fill="#3B82F6"/>
 
-      <!-- INTELIGENCIA ARTIFICIAL -->
-      <text x="97" y="221"
-            class="typing-text"
-            clip-path="url(#typingClip2)">
-        INTELIGENCIA ARTIFICIAL
-      </text>
-
-      <!-- CIBERSEGURIDAD -->
-      <text x="97" y="221"
-            class="typing-text"
-            clip-path="url(#typingClip3)">
-        CIBERSEGURIDAD
-      </text>
-
-      <!-- CURSOR -->
-      <rect x="97" y="204"
-            width="2.5" height="21"
-            rx="1"
-            fill="#22D3EE"
-            class="cursor">
-        <animate attributeName="x"
-          values="97;97;347;347;97;97;347;97;287;97"
-          keyTimes="0;.04;.18;.28;.34;.38;.53;.69;.88;1"
-          dur="12s"
-          repeatCount="indefinite"/>
-      </rect>
+      <text x="426" y="221">Ciberseguridad</text>
     </g>
 
     <!-- UBICACIÓN -->
@@ -272,7 +210,7 @@
       </text>
     </g>
 
-    <!-- ESTADO -->
+    <!-- ESTADO ACTUAL -->
     <g transform="translate(72 276)">
       <circle cx="4" cy="0" r="3" fill="#22C55E"/>
 
@@ -281,7 +219,7 @@
             font-size="10"
             letter-spacing="1"
             fill="#64748B">
-        BUILDING THE FUTURE
+        CONSTRUYENDO EL FUTURO
       </text>
     </g>
 
@@ -293,22 +231,22 @@
         stroke-opacity=".09"
         stroke-width="1"/>
 
-  <!-- CUBO 3D -->
+  <!-- CUBO TRIDIMENSIONAL -->
   <g transform="translate(690 48) scale(0.42)">
-    <g class="cube-float">
+    <g class="cubo-flotante">
 
-      <!-- CARAS -->
+      <!-- CARAS DEL CUBO -->
       <path d="M257 17 L490 145 L257 273 L22 145 Z"
-            fill="url(#cubeTop)"/>
+            fill="url(#cuboSuperior)"/>
 
       <path d="M22 145 L257 273 L257 495 L22 369 Z"
-            fill="url(#cubeLeft)"/>
+            fill="url(#cuboIzquierdo)"/>
 
       <path d="M490 145 L257 273 L257 495 L490 369 Z"
-            fill="url(#cubeRight)"/>
+            fill="url(#cuboDerecho)"/>
 
       <!-- SÍMBOLO BLANCO -->
-      <g clip-path="url(#cubeClip)">
+      <g clip-path="url(#recorteCubo)">
 
         <g fill="none"
            stroke="#FFFFFF"
@@ -360,11 +298,7 @@
         opacity=".18"
         pathLength="100"
         stroke-dasharray="22 78"
-        class="light">
-        <animate attributeName="stroke-dashoffset"
-          from="0" to="-100" dur="4s"
-          repeatCount="indefinite"/>
-      </path>
+        class="luz"/>
 
       <!-- LUZ TRICOLOR -->
       <path
@@ -375,11 +309,8 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         pathLength="100"
-        stroke-dasharray="22 78">
-        <animate attributeName="stroke-dashoffset"
-          from="0" to="-100" dur="4s"
-          repeatCount="indefinite"/>
-      </path>
+        stroke-dasharray="22 78"
+        class="luz"/>
 
       <!-- BRILLO CENTRAL -->
       <path
@@ -390,11 +321,8 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         pathLength="100"
-        stroke-dasharray="8 92">
-        <animate attributeName="stroke-dashoffset"
-          from="0" to="-100" dur="4s"
-          repeatCount="indefinite"/>
-      </path>
+        stroke-dasharray="8 92"
+        class="nucleo-luz"/>
 
     </g>
   </g>
@@ -406,11 +334,11 @@
         letter-spacing="2"
         text-anchor="middle"
         fill="#64748B">
-    CODE · SECURE · INNOVATE
+    CREAR · PROTEGER · INNOVAR
   </text>
 
   <circle cx="950" cy="266" r="3"
           fill="#22D3EE"
-          class="soft-glow"/>
+          class="brillo-suave"/>
 
 </svg>
