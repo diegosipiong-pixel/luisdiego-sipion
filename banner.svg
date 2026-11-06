@@ -1,4 +1,3 @@
-
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1000 300"
      width="1000" height="300"
@@ -26,20 +25,20 @@
       <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- COLORES DEL CUBO -->
+    <!-- COLORES DEL CUBO (AHORA EN NEGRO) -->
     <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#42A5F5"/>
-      <stop offset="100%" stop-color="#1685D5"/>
+      <stop offset="0%" stop-color="#3A3A3A"/>
+      <stop offset="100%" stop-color="#1F1F1F"/>
     </linearGradient>
 
     <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#174BD9"/>
-      <stop offset="100%" stop-color="#3535C5"/>
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
 
     <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#28C7DF"/>
-      <stop offset="100%" stop-color="#35B6D0"/>
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#262626"/>
     </linearGradient>
 
     <!-- FONDO -->
