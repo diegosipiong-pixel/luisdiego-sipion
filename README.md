@@ -1,388 +1,175 @@
-
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1000 340"
-     width="1000"
-     height="340"
-     role="img"
-     aria-labelledby="title desc">
-
-  <title id="title">Luis Diego Sipion Galvez | VS Code Portfolio</title>
-  <desc id="desc">Portfolio de Ingeniería de Software, IA y Ciberseguridad con diseño inspirado en Visual Studio Code.</desc>
-
-  <defs>
-    <!-- COLORES DEL EDITOR -->
-    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#45B7F5"/>
-      <stop offset="100%" stop-color="#1765C5"/>
-    </linearGradient>
-
-    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2456D9"/>
-      <stop offset="100%" stop-color="#272E9E"/>
-    </linearGradient>
-
-    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#29C6DC"/>
-      <stop offset="100%" stop-color="#1689B5"/>
-    </linearGradient>
-
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="50%" stop-color="#3B82F6"/>
-      <stop offset="100%" stop-color="#A855F7"/>
-    </linearGradient>
-
-    <linearGradient id="titleAccent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#A855F7"/>
-    </linearGradient>
-
-    <radialGradient id="ambient">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity=".18"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
-    </radialGradient>
-
-    <clipPath id="frame">
-      <rect width="1000" height="340" rx="12"/>
-    </clipPath>
-
-    <clipPath id="cubeClip">
-      <path d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"/>
-    </clipPath>
-  </defs>
-
-  <style>
-    .mono {
-      font-family: Consolas, 'Courier New', monospace;
-    }
-
-    .sans {
-      font-family: 'Segoe UI', Arial, sans-serif;
-    }
-
-    .float {
-      animation: float 5s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-    }
-
-    .light {
-      animation: travel 4s linear infinite;
-    }
-
-    @keyframes travel {
-      to { stroke-dashoffset: -100; }
-    }
-
-    .cursor {
-      animation: blink 1s steps(1) infinite;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-
-    .pulse {
-      animation: pulse 2.5s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: .5; }
-      50% { opacity: 1; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-    }
-  </style>
-
-  <g clip-path="url(#frame)">
-
-    <!-- FONDO DE LA VENTANA -->
-    <rect width="1000" height="340" fill="#1E1E1E"/>
-
-    <!-- BARRA SUPERIOR -->
-    <rect width="1000" height="34" fill="#181818"/>
-
-    <!-- LOGO VS CODE -->
-    <g transform="translate(13 8)">
-      <path d="M13 2 L2 12 L7 17 L18 7 L25 10 L25 22 L18 25 L7 15 L2 20 L13 30 L29 24 L29 8 Z"
-            fill="#007ACC"
-            transform="scale(.7)"/>
-    </g>
-
-    <text x="42" y="22"
-          class="sans"
-          font-size="12"
-          fill="#CCCCCC">
-      Luis Diego Sipion Galvez — Portfolio
-    </text>
-
-    <!-- CONTROLES DE VENTANA -->
-    <g fill="#AAAAAA">
-      <path d="M918 16 H930" stroke="#AAAAAA" stroke-width="1"/>
-      <rect x="950" y="10" width="10" height="10"
-            fill="none" stroke="#AAAAAA" stroke-width="1"/>
-      <path d="M979 10 L989 20 M989 10 L979 20"
-            stroke="#AAAAAA" stroke-width="1"/>
-    </g>
-
-    <!-- BARRA DE ACTIVIDAD -->
-    <rect x="0" y="34" width="48" height="281" fill="#181818"/>
-
-    <!-- EXPLORADOR -->
-    <g stroke="#858585" fill="none" stroke-width="1.6">
-      <rect x="15" y="51" width="17" height="14" rx="1"/>
-      <path d="M15 55 H32"/>
-      <circle cx="23.5" cy="91" r="8"/>
-      <path d="M18 91 H29 M23.5 86 V96"/>
-      <path d="M15 127 L23 119 L31 127 L23 135 Z"/>
-      <path d="M15 162 H32 L23.5 176 Z"/>
-      <circle cx="23" cy="210" r="8"/>
-      <path d="M19 210 H27 M23 206 V214"/>
-    </g>
-
-    <rect x="0" y="43" width="2" height="29" fill="#007ACC"/>
-
-    <!-- DIVISOR SIDEBAR -->
-    <rect x="48" y="34" width="1" height="281" fill="#333333"/>
-
-    <!-- PANEL EXPLORADOR -->
-    <rect x="49" y="34" width="190" height="281" fill="#181818"/>
-
-    <text x="64" y="57"
-          class="sans"
-          font-size="10"
-          letter-spacing="1"
-          fill="#BBBBBB">
-      EXPLORER
-    </text>
-
-    <text x="65" y="82"
-          class="mono"
-          font-size="11"
-          fill="#CCCCCC">
-      ▼ PORTFOLIO
-    </text>
-
-    <!-- ARCHIVOS -->
-    <g class="mono" font-size="10.5">
-      <text x="82" y="108" fill="#E8AB53">◇</text>
-      <text x="98" y="108" fill="#CCCCCC">index.ts</text>
-
-      <text x="82" y="132" fill="#519ABA">◇</text>
-      <text x="98" y="132" fill="#CCCCCC">about.md</text>
-
-      <text x="82" y="156" fill="#C586C0">◇</text>
-      <text x="98" y="156" fill="#CCCCCC">security.py</text>
-
-      <text x="82" y="180" fill="#519ABA">◇</text>
-      <text x="98" y="180" fill="#CCCCCC">projects.json</text>
-
-      <text x="82" y="204" fill="#89CFF0">◇</text>
-      <text x="98" y="204" fill="#CCCCCC">README.md</text>
-
-      <text x="82" y="228" fill="#DCDCAA">◇</text>
-      <text x="98" y="228" fill="#CCCCCC">contact.ts</text>
-    </g>
-
-    <!-- PANEL INFERIOR -->
-    <path d="M49 251 H239" stroke="#333333"/>
-
-    <text x="64" y="272"
-          class="sans"
-          font-size="10"
-          fill="#BBBBBB">
-      OUTLINE
-    </text>
-
-    <text x="64" y="294"
-          class="sans"
-          font-size="10"
-          fill="#777777">
-      TIMELINE
-    </text>
-
-    <!-- ÁREA DEL EDITOR -->
-    <rect x="239" y="34" width="761" height="281" fill="#1E1E1E"/>
-
-    <!-- PESTAÑA ACTIVA -->
-    <rect x="239" y="34" width="145" height="32" fill="#1E1E1E"/>
-    <rect x="239" y="34" width="145" height="2" fill="#007ACC"/>
-
-    <text x="254" y="54"
-          class="mono"
-          font-size="11"
-          fill="#E8AB53">
-      ◇ index.ts
-    </text>
-
-    <path d="M384 34 V66" stroke="#333333"/>
-
-    <!-- BREADCRUMB -->
-    <text x="255" y="83"
-          class="mono"
-          font-size="9"
-          fill="#858585">
-      portfolio / src / index.ts
-    </text>
-
-    <!-- CÓDIGO -->
-    <g class="mono" font-size="13">
-
-      <g fill="#858585" text-anchor="end">
-        <text x="272" y="117">1</text>
-        <text x="272" y="143">2</text>
-        <text x="272" y="169">3</text>
-        <text x="272" y="195">4</text>
-        <text x="272" y="221">5</text>
-        <text x="272" y="247">6</text>
-        <text x="272" y="273">7</text>
-      </g>
-
-      <text x="294" y="117" fill="#C586C0">const</text>
-      <text x="339" y="117" fill="#9CDCFE">developer</text>
-      <text x="413" y="117" fill="#D4D4D4">= {</text>
-
-      <text x="311" y="143" fill="#9CDCFE">name:</text>
-      <text x="367" y="143" fill="#CE9178">"Luis Diego Sipion Galvez"</text>
-
-      <text x="311" y="169" fill="#9CDCFE">field:</text>
-      <text x="367" y="169" fill="#CE9178">"Software Engineering"</text>
-
-      <text x="311" y="195" fill="#9CDCFE">focus:</text>
-      <text x="367" y="195" fill="#CE9178">"AI & Cybersecurity"</text>
-
-      <text x="311" y="221" fill="#9CDCFE">location:</text>
-      <text x="386" y="221" fill="#CE9178">"Lima, Peru"</text>
-
-      <text x="294" y="247" fill="#D4D4D4">};</text>
-
-      <text x="294" y="273" fill="#6A9955">// Building secure digital solutions.</text>
-    </g>
-
-    <!-- CURSOR -->
-    <rect x="294" y="280" width="7" height="15"
-          fill="#AEAFAD" class="cursor"/>
-
-    <!-- PANEL DE IDENTIDAD VISUAL -->
-    <g transform="translate(700 88)">
-
-      <circle cx="115" cy="105" r="145"
-              fill="url(#ambient)"
-              class="pulse"/>
-
-      <!-- CUBO -->
-      <g transform="translate(0 0) scale(.43)">
-        <g class="float">
-
-          <path d="M257 17 L490 145 L257 273 L22 145 Z"
-                fill="url(#cubeTop)"/>
-
-          <path d="M22 145 L257 273 L257 495 L22 369 Z"
-                fill="url(#cubeLeft)"/>
-
-          <path d="M490 145 L257 273 L257 495 L490 369 Z"
-                fill="url(#cubeRight)"/>
-
-          <!-- SÍMBOLO BLANCO -->
-          <g clip-path="url(#cubeClip)">
-
-            <g fill="none"
-               stroke="#FFFFFF"
-               stroke-width="27"
-               stroke-linecap="round"
-               stroke-linejoin="round">
-              <path d="M108 83 L219 145"/>
-              <path d="M404 83 L294 145"/>
-            </g>
-
-            <ellipse cx="257" cy="163"
-                     rx="59" ry="34"
-                     fill="#FFFFFF"/>
-
-            <ellipse cx="126" cy="313"
-                     rx="32" ry="56"
-                     transform="rotate(-28 126 313)"
-                     fill="#FFFFFF"/>
-
-            <path d="M145 334 L257 398"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  stroke-width="25"
-                  stroke-linecap="round"/>
-
-            <ellipse cx="387" cy="313"
-                     rx="32" ry="56"
-                     transform="rotate(28 387 313)"
-                     fill="#FFFFFF"/>
-
-            <path d="M367 334 L257 398"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  stroke-width="25"
-                  stroke-linecap="round"/>
-          </g>
-
-          <!-- LUZ TRICOLOR -->
-          <path
-            d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"
-            fill="none"
-            stroke="#22D3EE"
-            stroke-width="30"
-            opacity=".2"
-            pathLength="100"
-            stroke-dasharray="22 78"
-            class="light"/>
-
-          <path
-            d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"
-            fill="none"
-            stroke="url(#neon)"
-            stroke-width="13"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            pathLength="100"
-            stroke-dasharray="22 78"
-            class="light"/>
-
-          <path
-            d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"
-            fill="none"
-            stroke="#FFFFFF"
-            stroke-width="3"
-            pathLength="100"
-            stroke-dasharray="8 92"
-            class="light"/>
-        </g>
-      </g>
-
-      <!-- TEXTO BAJO EL CUBO -->
-      <text x="115" y="252"
-            class="mono"
-            font-size="10"
-            letter-spacing="2"
-            text-anchor="middle"
-            fill="#858585">
-        CODE · SECURE · INNOVATE
-      </text>
-    </g>
-
-    <!-- STATUS BAR -->
-    <rect x="0" y="315" width="1000" height="25" fill="#007ACC"/>
-
-    <g class="sans" font-size="10" fill="#FFFFFF">
-      <text x="12" y="332">⟨ ⟩</text>
-      <text x="45" y="332">main*</text>
-      <text x="105" y="332">✓ 0 errors</text>
-
-      <text x="790" y="332">UTF-8</text>
-      <text x="850" y="332">TypeScript</text>
-      <text x="945" y="332" text-anchor="end">Ln 1, Col 1</text>
-    </g>
-
-  </g>
-</svg>
+<!--
+  README de perfil de Edwar Alama (github.com/Edwxr320)
+  - Este archivo va en el repositorio público llamado exactamente "Edwxr320".
+  - El banner y el divisor son SVG propios: súbelos a la carpeta /assets del mismo repositorio.
+    Así no dependen de ningún servicio externo.
+  - Los comentarios marcados con ✏️ indican qué puedes cambiar después.
+-->
+
+<!-- ✏️ BANNER: animación propia en assets/banner.svg (nombre + texto que se escribe solo + red neuronal).
+     Para cambiar las frases que se escriben, edita el archivo SVG (busca las etiquetas <text class="mono typed">). -->
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="Edwar Alama — Ingeniería de Software con IA · SENATI">
+</p>
+
+<!-- ✏️ ESTADO: cambia el texto del badge si ya conseguiste tus prácticas. -->
+<p align="center">
+  <img src="https://img.shields.io/badge/estado-buscando%20pr%C3%A1cticas%20preprofesionales-22D3EE?style=flat-square&labelColor=161B22" alt="Estado: buscando prácticas preprofesionales">
+  <img src="https://img.shields.io/badge/SENATI-quinto%20ciclo-8B5CF6?style=flat-square&labelColor=161B22" alt="SENATI, quinto ciclo">
+</p>
+
+<p align="center"><img src="./divider.svg" width="100%" alt=""></p>
+
+## Sobre mí
+
+<!-- ✏️ TEXTO: actualiza el ciclo cuando avances. -->
+Soy Ingeniero de Software con IA con habilidades en JavaScript, PHP, Python, MySQL, Git y Scrum. Me caracterizo por la responsabilidad, el aprendizaje continuo y el trabajo en equipo. Desarrollo e-commerce completos y modelos de visión por computadora con TensorFlow y Keras, integrando web y Machine Learning para resolver problemas reales. Mi misión es diseñar arquitecturas web escalables con IA para optimizar procesos y generar valor medible en producción.  
+## Tecnologías
+
+<!-- ✏️ ICONOS: vienen de skillicons.dev. Para agregar uno, añade su id al parámetro i= (lista en https://skillicons.dev).
+     Las que no tienen icono ahí (SQL Server, Oracle, Keras, Colab) van como badges de shields.io. -->
+<table>
+  <tr>
+    <td><b>Frontend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" height="40" alt="HTML5, CSS3, JavaScript"></td>
+  </tr>
+  <tr>
+    <td><b>Backend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=php,java&theme=dark" height="40" alt="PHP, Java"></td>
+  </tr>
+  <tr>
+    <td><b>Bases de datos</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=mysql&theme=dark" height="40" alt="MySQL">
+      <img src="https://img.shields.io/badge/SQL%20Server-161B22?style=for-the-badge" height="28" alt="SQL Server">
+      <img src="https://img.shields.io/badge/Oracle%20SQL-161B22?style=for-the-badge" height="28" alt="Oracle SQL">
+    </td>
+  </tr>
+  <tr>
+    <td><b>IA y datos</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=py,tensorflow&theme=dark" height="40" alt="Python, TensorFlow">
+      <img src="https://img.shields.io/badge/Keras-161B22?style=for-the-badge&logo=keras&logoColor=D00000" height="28" alt="Keras">
+      <img src="https://img.shields.io/badge/Colab-161B22?style=for-the-badge&logo=googlecolab&logoColor=F9AB00" height="28" alt="Google Colab">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Herramientas</b></td>
+    <td><img src="https://skillicons.dev/icons?i=git,github,vscode,linux&theme=dark" height="40" alt="Git, GitHub, VS Code, Linux"></td>
+  </tr>
+</table>
+
+<details>
+<summary><b>Qué hay detrás de esos iconos</b></summary>
+<br>
+
+| Área | Detalle |
+| --- | --- |
+| Web | Manipulación del DOM, AJAX, diseño responsive |
+| Arquitectura | Programación orientada a objetos, patrón MVC |
+| Bases de datos | Modelado relacional y consultas SQL |
+| IA | CNN, transfer learning, fine-tuning con MobileNetV2, visión por computadora |
+| Trabajo en equipo | Scrum |
+| Otros entornos | NetBeans, Oracle SQL Developer |
+
+</details>
+
+<p align="center"><img src="./assets/divider.svg" width="100%" alt=""></p>
+
+## Proyectos
+
+<!-- ✏️ TARJETAS: cada <td> es una tarjeta. Para agregar un proyecto nuevo, copia un <td> completo.
+     Si un proyecto pasa a estar terminado o en otro estado, cambia su badge de estado. -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>FOOD VIDCODE</h3>
+      <img src="https://img.shields.io/badge/demo%20frontend-22D3EE?style=flat-square" alt="Demo frontend">
+      <p>Empezó como la landing page de una hamburguesería y terminó siendo una demo completa de pedidos: catálogo con buscador y filtros, carrito, checkout con validación, cuentas simuladas, historial por usuario y seguimiento del pedido. Todo corre en el navegador con <code>localStorage</code>; no tiene backend ni pagos reales.</p>
+      <p>
+        <img src="https://img.shields.io/badge/HTML5-0D1117?style=flat-square&logo=html5&logoColor=E34F26" alt="HTML5">
+        <img src="https://img.shields.io/badge/CSS3-0D1117?style=flat-square&logo=css&logoColor=1572B6" alt="CSS3">
+        <img src="https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+        <img src="https://img.shields.io/badge/Swiper.js-0D1117?style=flat-square&logo=swiper&logoColor=6332F6" alt="Swiper.js">
+      </p>
+      <!-- ✏️ DEMO: enlace tomado del README del repositorio. Si cambias el dominio en Vercel, actualízalo aquí. -->
+      <a href="https://github.com/Edwxr320/web"><b>Código</b></a> · <a href="https://sistema-pedidos-food.vercel.app/"><b>Ver demo</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Emociones faciales con Deep Learning</h3>
+      <img src="https://img.shields.io/badge/proyecto%20acad%C3%A9mico-8B5CF6?style=flat-square" alt="Proyecto académico">
+      <p>Entrené una CNN desde cero y la comparé con MobileNetV2 (transfer learning + fine-tuning) para clasificar 7 emociones en casi 50 mil imágenes. En mi ejecución la CNN llegó a 59.75&nbsp;% de accuracy de validación y MobileNetV2 a 50.27&nbsp;%; el README explica el proceso y las limitaciones del modelo.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=3776AB" alt="Python">
+        <img src="https://img.shields.io/badge/TensorFlow-0D1117?style=flat-square&logo=tensorflow&logoColor=FF6F00" alt="TensorFlow">
+        <img src="https://img.shields.io/badge/Keras-0D1117?style=flat-square&logo=keras&logoColor=D00000" alt="Keras">
+        <img src="https://img.shields.io/badge/Colab-0D1117?style=flat-square&logo=googlecolab&logoColor=F9AB00" alt="Google Colab">
+      </p>
+      <a href="https://github.com/Edwxr320/CNN__MobileNetV2__Emociones_Faciales"><b>Notebook y resultados</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Capi-Barato</h3>
+      <img src="https://img.shields.io/badge/pr%C3%A1ctica%20de%20frontend-3B82F6?style=flat-square" alt="Práctica de frontend">
+      <p>Tienda de electrónicos con catálogo filtrable por categoría, vista de detalle con galería de imágenes, carrito con control de cantidades guardado en <code>localStorage</code> y página de inicio de sesión.</p>
+      <p>
+        <img src="https://img.shields.io/badge/HTML5-0D1117?style=flat-square&logo=html5&logoColor=E34F26" alt="HTML5">
+        <img src="https://img.shields.io/badge/CSS3-0D1117?style=flat-square&logo=css&logoColor=1572B6" alt="CSS3">
+        <img src="https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+      </p>
+      <a href="https://github.com/Edwxr320/web-capi-barato"><b>Código</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Personas desaparecidas en Perú</h3>
+      <img src="https://img.shields.io/badge/en%20desarrollo-F59E0B?style=flat-square" alt="En desarrollo">
+      <p>Proyecto de investigación sobre patrones territoriales y temporales en los registros de personas desaparecidas entre 2019 y 2025. Por ahora el repositorio tiene el dataset con el que trabajo; el análisis todavía no está publicado.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Dataset-CSV-0D1117?style=flat-square" alt="Dataset CSV">
+        <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=3776AB" alt="Python">
+      </p>
+      <a href="https://github.com/Edwxr320/Data_set_Personas_Desaparecidas_2019_2025"><b>Dataset</b></a>
+    </td>
+  </tr>
+</table>
+
+## Ahora mismo
+
+<!-- ✏️ ACTUALMENTE: la sección que más rápido envejece. Revísala cada cierto tiempo. -->
+- **Construyendo:** el análisis del proyecto de personas desaparecidas (clustering y análisis espacial con Python).
+- **Buscando:** prácticas preprofesionales en desarrollo de software.
+
+<details>
+<summary><b>Formación e idiomas</b></summary>
+<br>
+
+| | |
+| --- | --- |
+| **SENATI** | Ingeniería de Software con Inteligencia Artificial · 2024-2 – actualidad |
+| **Beca 18 – PRONABEC** | Becario del Programa Nacional |
+| **Idiomas** | Español nativo · Inglés básico |
+
+</details>
+
+<p align="center"><img src="./assets/divider.svg" width="100%" alt=""></p>
+
+## Actividad
+
+<!-- ✏️ ESTADÍSTICAS: usa la instancia pública de streak-stats.demolab.com.
+     Si algún día deja de cargar, borra este bloque: tu gráfico de contribuciones nativo de GitHub
+     ya aparece debajo del README, así que no hace falta duplicarlo con otro widget. -->
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=Edwxr320&locale=es&hide_border=true&background=0D1117&stroke=30363D&ring=8B5CF6&fire=22D3EE&currStreakNum=F0F6FC&sideNums=F0F6FC&currStreakLabel=22D3EE&sideLabels=8B949E&dates=6E7681" width="100%" alt="Racha de contribuciones de Edwxr320">
+</p>
+
+## Contacto
+
+<!-- ✏️ ENLACES: LinkedIn, portafolio y correo tomados del CV y del perfil de GitHub. -->
+Si tienes una vacante de prácticas o quieres ver algo de lo que hice, estos son los mejores lugares:
+
+<p>
+  <a href="https://www.linkedin.com/in/edwar-alama"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://portafolio-edwar.vercel.app/"><img src="https://img.shields.io/badge/Portafolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portafolio"></a>
+  <a href="mailto:edwar.alamac@gmail.com"><img src="https://img.shields.io/badge/Correo-161B22?style=for-the-badge&logo=gmail&logoColor=22D3EE" alt="Correo"></a>
+  <a href="https://github.com/Edwxr320"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
