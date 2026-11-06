@@ -4,30 +4,30 @@
      width="1000"
      height="300"
      role="img"
-     aria-labelledby="titulo descripcion">
+     aria-labelledby="title desc">
 
-  <title id="titulo">Luis Diego Sipion Galvez</title>
-  <desc id="descripcion">Ingeniería de Software, Inteligencia Artificial y Ciberseguridad</desc>
+  <title id="title">Luis Diego Sipion Galvez</title>
+  <desc id="desc">Software Engineering, Artificial Intelligence and Cybersecurity</desc>
 
   <defs>
-    <!-- PALETA DE COLORES -->
-    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="0">
+    <!-- PALETA -->
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22D3EE"/>
       <stop offset="52%" stop-color="#3B82F6"/>
       <stop offset="100%" stop-color="#A855F7"/>
     </linearGradient>
 
-    <linearGradient id="cuboSuperior" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#45B7F5"/>
       <stop offset="100%" stop-color="#1765C5"/>
     </linearGradient>
 
-    <linearGradient id="cuboIzquierdo" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#2456D9"/>
       <stop offset="100%" stop-color="#272E9E"/>
     </linearGradient>
 
-    <linearGradient id="cuboDerecho" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#29C6DC"/>
       <stop offset="100%" stop-color="#1689B5"/>
     </linearGradient>
@@ -38,13 +38,12 @@
       <stop offset="100%" stop-color="#A855F7"/>
     </linearGradient>
 
-    <radialGradient id="luzAmbiental">
+    <radialGradient id="ambient">
       <stop offset="0%" stop-color="#2563EB" stop-opacity=".16"/>
       <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- CUADRÍCULA DEL FONDO -->
-    <pattern id="cuadricula" width="32" height="32" patternUnits="userSpaceOnUse">
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32"
             fill="none"
             stroke="#FFFFFF"
@@ -52,13 +51,11 @@
             stroke-width="1"/>
     </pattern>
 
-    <!-- RECORTE DEL BANNER -->
-    <clipPath id="marco">
+    <clipPath id="frame">
       <rect width="1000" height="300" rx="18"/>
     </clipPath>
 
-    <!-- RECORTE DEL CUBO -->
-    <clipPath id="recorteCubo">
+    <clipPath id="cubeClip">
       <path d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"/>
     </clipPath>
   </defs>
@@ -72,55 +69,50 @@
       font-family: 'SFMono-Regular', Consolas, monospace;
     }
 
-    /* ANIMACIÓN FLOTANTE DEL CUBO */
-    .cubo-flotante {
-      animation: flotar 5s ease-in-out infinite;
+    .cube-float {
+      animation: float 5s ease-in-out infinite;
     }
 
-    @keyframes flotar {
+    @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
 
-    /* ANIMACIÓN DE LA LUZ */
-    .luz {
-      animation: recorrido 4s linear infinite;
+    .light {
+      animation: travel 4s linear infinite;
     }
 
-    .nucleo-luz {
-      animation: recorrido 4s linear infinite;
+    .light-core {
+      animation: travel 4s linear infinite;
     }
 
-    @keyframes recorrido {
+    @keyframes travel {
       to { stroke-dashoffset: -100; }
     }
 
-    /* PARPADEO DEL CURSOR */
     .cursor {
-      animation: parpadear 1s steps(1) infinite;
+      animation: blink 1s steps(1) infinite;
     }
 
-    @keyframes parpadear {
+    @keyframes blink {
       50% { opacity: 0; }
     }
 
-    /* APARICIÓN DE LA LÍNEA */
-    .linea {
+    .line {
       transform-origin: left;
-      animation: revelar 1.2s ease-out both;
+      animation: reveal 1.2s ease-out both;
     }
 
-    @keyframes revelar {
+    @keyframes reveal {
       from { transform: scaleX(0); opacity: 0; }
       to { transform: scaleX(1); opacity: 1; }
     }
 
-    /* BRILLO SUAVE */
-    .brillo-suave {
-      animation: resplandor 4s ease-in-out infinite;
+    .soft-glow {
+      animation: glow 4s ease-in-out infinite;
     }
 
-    @keyframes resplandor {
+    @keyframes glow {
       0%, 100% { opacity: .45; }
       50% { opacity: .9; }
     }
@@ -131,11 +123,11 @@
   </style>
 
   <!-- FONDO -->
-  <g clip-path="url(#marco)">
+  <g clip-path="url(#frame)">
     <rect width="1000" height="300" fill="#0B0F17"/>
-    <rect width="1000" height="300" fill="url(#cuadricula)"/>
+    <rect width="1000" height="300" fill="url(#grid)"/>
 
-    <circle cx="800" cy="150" r="260" fill="url(#luzAmbiental)"/>
+    <circle cx="800" cy="150" r="260" fill="url(#ambient)"/>
 
     <rect x=".75" y=".75"
           width="998.5" height="298.5"
@@ -155,7 +147,7 @@
           font-size="13"
           letter-spacing="3"
           fill="#22D3EE">
-      INGENIERÍA DE SOFTWARE
+      SOFTWARE ENGINEERING
     </text>
 
     <!-- NOMBRE -->
@@ -176,21 +168,21 @@
     </text>
 
     <!-- LÍNEA DE ACENTO -->
-    <rect class="linea"
+    <rect class="line"
           x="72" y="185"
           width="100" height="3"
           rx="2"
-          fill="url(#acento)"/>
+          fill="url(#accent)"/>
 
     <!-- ESPECIALIDADES -->
     <g font-size="14" fill="#C5CEDA">
-      <text x="72" y="221">Desarrollo de Software</text>
+      <text x="72" y="221">Software Development</text>
       <circle cx="231" cy="216" r="2.5" fill="#3B82F6"/>
 
-      <text x="247" y="221">Inteligencia Artificial</text>
+      <text x="247" y="221">Artificial Intelligence</text>
       <circle cx="410" cy="216" r="2.5" fill="#3B82F6"/>
 
-      <text x="426" y="221">Ciberseguridad</text>
+      <text x="426" y="221">Cybersecurity</text>
     </g>
 
     <!-- UBICACIÓN -->
@@ -210,7 +202,7 @@
       </text>
     </g>
 
-    <!-- ESTADO ACTUAL -->
+    <!-- ESTADO -->
     <g transform="translate(72 276)">
       <circle cx="4" cy="0" r="3" fill="#22C55E"/>
 
@@ -219,7 +211,7 @@
             font-size="10"
             letter-spacing="1"
             fill="#64748B">
-        CONSTRUYENDO EL FUTURO
+        BUILDING THE FUTURE
       </text>
     </g>
 
@@ -231,22 +223,22 @@
         stroke-opacity=".09"
         stroke-width="1"/>
 
-  <!-- CUBO TRIDIMENSIONAL -->
+  <!-- CUBO 3D -->
   <g transform="translate(690 48) scale(0.42)">
-    <g class="cubo-flotante">
+    <g class="cube-float">
 
-      <!-- CARAS DEL CUBO -->
+      <!-- CARAS -->
       <path d="M257 17 L490 145 L257 273 L22 145 Z"
-            fill="url(#cuboSuperior)"/>
+            fill="url(#cubeTop)"/>
 
       <path d="M22 145 L257 273 L257 495 L22 369 Z"
-            fill="url(#cuboIzquierdo)"/>
+            fill="url(#cubeLeft)"/>
 
       <path d="M490 145 L257 273 L257 495 L490 369 Z"
-            fill="url(#cuboDerecho)"/>
+            fill="url(#cubeRight)"/>
 
       <!-- SÍMBOLO BLANCO -->
-      <g clip-path="url(#recorteCubo)">
+      <g clip-path="url(#cubeClip)">
 
         <g fill="none"
            stroke="#FFFFFF"
@@ -298,7 +290,7 @@
         opacity=".18"
         pathLength="100"
         stroke-dasharray="22 78"
-        class="luz"/>
+        class="light"/>
 
       <!-- LUZ TRICOLOR -->
       <path
@@ -310,7 +302,7 @@
         stroke-linejoin="round"
         pathLength="100"
         stroke-dasharray="22 78"
-        class="luz"/>
+        class="light"/>
 
       <!-- BRILLO CENTRAL -->
       <path
@@ -322,7 +314,7 @@
         stroke-linejoin="round"
         pathLength="100"
         stroke-dasharray="8 92"
-        class="nucleo-luz"/>
+        class="light-core"/>
 
     </g>
   </g>
@@ -334,11 +326,11 @@
         letter-spacing="2"
         text-anchor="middle"
         fill="#64748B">
-    CREAR · PROTEGER · INNOVAR
+    CODE · SECURE · INNOVATE
   </text>
 
   <circle cx="950" cy="266" r="3"
           fill="#22D3EE"
-          class="brillo-suave"/>
+          class="soft-glow"/>
 
 </svg>
