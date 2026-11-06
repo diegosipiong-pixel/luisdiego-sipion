@@ -1,9 +1,7 @@
-```html
 <!--
   README de perfil de Edwar Alama (github.com/Edwxr320)
-  - Repositorio público: Edwxr320
-  - Banner: ./banner.svg
-  - Divisor: ./assets/divider.svg
+  Banner: ./banner.svg
+  Divisor: ./assets/divider.svg
 -->
 
 <!-- BANNER -->
@@ -210,4 +208,3 @@ Si tienes una oportunidad de prácticas, una propuesta de colaboración o quiere
     <img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
 </p>
-```
