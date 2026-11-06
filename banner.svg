@@ -7,7 +7,7 @@
      aria-labelledby="title desc">
 
   <title id="title">Luis Diego Sipion Galvez</title>
-  <desc id="desc">Software Engineering, Artificial Intelligence and Cybersecurity</desc>
+  <desc id="desc">Ingeniería de Software, Inteligencia Artificial y Ciberseguridad</desc>
 
   <defs>
     <!-- PALETA -->
@@ -58,6 +58,37 @@
     <clipPath id="cubeClip">
       <path d="M257 17 L490 145 L490 369 L257 495 L22 369 L22 145 Z"/>
     </clipPath>
+
+    <!-- RECORTES DE TEXTO ANIMADO -->
+    <clipPath id="typingClip1">
+      <rect x="97" y="202" width="0" height="27">
+        <animate attributeName="width"
+          values="0;0;250;250;0;0"
+          keyTimes="0;.04;.18;.28;.34;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="typingClip2">
+      <rect x="97" y="202" width="0" height="27">
+        <animate attributeName="width"
+          values="0;0;0;250;250;0;0"
+          keyTimes="0;.34;.38;.53;.63;.69;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="typingClip3">
+      <rect x="97" y="202" width="0" height="27">
+        <animate attributeName="width"
+          values="0;0;190;190;0;0"
+          keyTimes="0;.73;.88;.98;1;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
   </defs>
 
   <style>
@@ -67,6 +98,13 @@
 
     .mono {
       font-family: 'SFMono-Regular', Consolas, monospace;
+    }
+
+    .typing-text {
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 17px;
+      font-weight: 500;
+      fill: #C5CEDA;
     }
 
     .cube-float {
@@ -91,7 +129,7 @@
     }
 
     .cursor {
-      animation: blink 1s steps(1) infinite;
+      animation: blink .8s steps(1) infinite;
     }
 
     @keyframes blink {
@@ -99,6 +137,7 @@
     }
 
     .line {
+      transform-box: fill-box;
       transform-origin: left;
       animation: reveal 1.2s ease-out both;
     }
@@ -174,15 +213,46 @@
           rx="2"
           fill="url(#accent)"/>
 
-    <!-- ESPECIALIDADES -->
-    <g font-size="14" fill="#C5CEDA">
-      <text x="72" y="221">Software Development</text>
-      <circle cx="231" cy="216" r="2.5" fill="#3B82F6"/>
+    <!-- ESPECIALIDADES ANIMADAS -->
+    <g>
+      <text x="72" y="221"
+            class="mono"
+            font-size="18"
+            fill="#8B5CF6">❯</text>
 
-      <text x="247" y="221">Artificial Intelligence</text>
-      <circle cx="410" cy="216" r="2.5" fill="#3B82F6"/>
+      <!-- INGENIERÍA DE SOFTWARE -->
+      <text x="97" y="221"
+            class="typing-text"
+            clip-path="url(#typingClip1)">
+        INGENIERÍA DE SOFTWARE
+      </text>
 
-      <text x="426" y="221">Cybersecurity</text>
+      <!-- INTELIGENCIA ARTIFICIAL -->
+      <text x="97" y="221"
+            class="typing-text"
+            clip-path="url(#typingClip2)">
+        INTELIGENCIA ARTIFICIAL
+      </text>
+
+      <!-- CIBERSEGURIDAD -->
+      <text x="97" y="221"
+            class="typing-text"
+            clip-path="url(#typingClip3)">
+        CIBERSEGURIDAD
+      </text>
+
+      <!-- CURSOR -->
+      <rect x="97" y="204"
+            width="2.5" height="21"
+            rx="1"
+            fill="#22D3EE"
+            class="cursor">
+        <animate attributeName="x"
+          values="97;97;347;347;97;97;347;97;287;97"
+          keyTimes="0;.04;.18;.28;.34;.38;.53;.69;.88;1"
+          dur="12s"
+          repeatCount="indefinite"/>
+      </rect>
     </g>
 
     <!-- UBICACIÓN -->
@@ -290,7 +360,11 @@
         opacity=".18"
         pathLength="100"
         stroke-dasharray="22 78"
-        class="light"/>
+        class="light">
+        <animate attributeName="stroke-dashoffset"
+          from="0" to="-100" dur="4s"
+          repeatCount="indefinite"/>
+      </path>
 
       <!-- LUZ TRICOLOR -->
       <path
@@ -301,8 +375,11 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         pathLength="100"
-        stroke-dasharray="22 78"
-        class="light"/>
+        stroke-dasharray="22 78">
+        <animate attributeName="stroke-dashoffset"
+          from="0" to="-100" dur="4s"
+          repeatCount="indefinite"/>
+      </path>
 
       <!-- BRILLO CENTRAL -->
       <path
@@ -313,8 +390,11 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         pathLength="100"
-        stroke-dasharray="8 92"
-        class="light-core"/>
+        stroke-dasharray="8 92">
+        <animate attributeName="stroke-dashoffset"
+          from="0" to="-100" dur="4s"
+          repeatCount="indefinite"/>
+      </path>
 
     </g>
   </g>
